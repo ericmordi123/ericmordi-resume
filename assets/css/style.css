@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,5000,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /*------------------------------------------------Colors*/
 
@@ -88,10 +88,10 @@ header {
 }
 
 .logo {
-    background: url("/assets/images/popeye.png");
+    background: url("/assets/images/eric.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     min-height: 360px;
     transition: all 5s ease-in-out;
     -moz-transition: all 5s ease-in-out;
@@ -309,10 +309,7 @@ p {
 
 .timeline-item::before {
                                       /* dates still not showing*/
-    content: att(dates);
-    position: absolute;
-    left: 2.5em;
-    top: 3em;
+    content: attr(dates);
     display: block;
     font-family: Exo, sans-serif;
     font-weight: 500;
@@ -357,7 +354,7 @@ p {
     max-width: 70%;
 }
 
-button[type="sbmit"] {                                               /* not working double check later*/
+button[type="submit"] {                                               
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #e84610;
